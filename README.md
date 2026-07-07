@@ -11,7 +11,7 @@
 
 **Real-time token vesting on Stellar — powered by Soroban smart contracts with live inter-contract calls.**
 
-🌐 **[Live Demo →](https://flowpoint.harshitasingh001.workers.dev/)**
+🌐 **[Live Demo →](https://pay-stream.scorer-value-poppy.workers.dev/)**
 
 🎬 **Demo Video (1–2 min):** PENDING — to be recorded and linked before final submission
 
