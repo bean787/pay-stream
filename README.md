@@ -2,7 +2,7 @@
 
 <div align="center">
 
-[![CI](https://github.com/bean787/pay-stream/actions/workflows/ci.yml/badge.svg)](https://github.com/bean787/pay-stream/actions/workflows/ci.yml)
+[![CI](https://github.com/bean787/pay-stream/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/bean787/pay-stream/actions/workflows/ci.yml)
 [![Stellar Testnet](https://img.shields.io/badge/Stellar-Testnet-7B61FF?logo=stellar&logoColor=white)](https://stellar.org)
 [![Soroban](https://img.shields.io/badge/Soroban-SDK%20v25-FF5A00?logo=rust&logoColor=white)](https://soroban.stellar.org)
 [![Next.js](https://img.shields.io/badge/Next.js-14-black?logo=next.js)](https://nextjs.org)
