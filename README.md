@@ -269,7 +269,14 @@ Also caught at the contract level if the balance check fails post-submission.
 
 ## 📸 Screenshots
 
-*Screenshots have been removed from the repository history.*
+> **PENDING** — the following screenshots will be captured from the running app and added before final submission:
+>
+> - Wallet connection modal (StellarWalletsKit) and connected state
+> - Create-stream flow and active streams dashboard
+> - Live vesting ticker and successful withdrawal
+> - Mobile responsive view (~375px width)
+> - CI/CD pipeline passing (GitHub Actions run)
+> - Test output with all passing tests
 
 ### Test Output (15 passing tests)
 
@@ -321,16 +328,24 @@ cd frontend && npm install && cd ..
 
 ### 2. Configure Environment Variables
 
-Create or edit `frontend/.env`:
+Copy the example env file and fill it in:
+
+```bash
+cp frontend/.env.example frontend/.env
+```
 
 ```env
 NEXT_PUBLIC_TOKEN_CONTRACT_ADDRESS=CCEKQUG2J37NH6EM6VBFGN5KBAIPBSRTFU5Q7UVMMJXVBM7P3T23O67R
 NEXT_PUBLIC_STREAM_CONTRACT_ADDRESS=CCP65ERUSMNI25ZOO7P6C4HG4FVIJBMCPZPZW7AQGQA6653EOLETMJBG
 NEXT_PUBLIC_STELLAR_NETWORK=testnet
 NEXT_PUBLIC_STELLAR_RPC_URL=https://soroban-testnet.stellar.org:443
+# Optional, testnet-only: enables the demo "Mint SV" faucet button.
+# Use the secret key of the token contract's admin account. Never commit it.
+NEXT_PUBLIC_DEPLOYER_SECRET=
 ```
 
 > The contracts above are already deployed and live on Stellar testnet. You can use them directly.
+> `.env` is gitignored — secrets must never be committed. Note that `NEXT_PUBLIC_*` values are embedded in the client bundle at build time, so the faucet key is intentionally a throwaway **testnet** account with no real value.
 
 ### 3. Run Locally
 
@@ -407,25 +422,22 @@ cargo test
 
 ## 📝 Commit History Summary
 
-This project was built incrementally in **15 meaningful commits** reflecting real progressive development stages:
+This project was built incrementally in meaningful commits reflecting real progressive development stages:
 
 | # | Commit Message |
 |---|---------------|
-| 1 | `chore: project scaffold (Next.js + Soroban workspace)` |
-| 2 | `feat: token contract implementation` |
-| 3 | `feat: stream contract — create_stream and storage model` |
-| 4 | `feat: stream contract — vested_amount calculation` |
-| 5 | `feat: stream contract — withdraw with inter-contract token transfer` |
-| 6 | `feat: stream contract — cancel_stream` |
-| 7 | `test: stream contract unit tests (11 passing)` |
-| 8 | `feat: wallet connect/disconnect via StellarWalletsKit` |
-| 9 | `feat: create stream UI flow` |
-| 10 | `feat: live vesting ticker + dashboard + withdraw UI` |
-| 11 | `feat: error handling (wallet missing, rejected signature, insufficient balance)` |
-| 12 | `feat: mobile responsive layout` |
-| 13 | `ci: GitHub Actions pipeline for contracts + frontend` |
-| 14 | `chore: testnet deployment + real contract addresses wired in` |
-| 15 | `docs: README with full evidence (addresses, tx hashes, screenshots)` |
+| 1 | `chore: initialize pay-stream project workspace scaffold` |
+| 2 | `feat: implement SEP-41 custom token smart contract` |
+| 3 | `feat: implement vesting stream smart contract core logic` |
+| 4 | `test: add smart contract unit tests` |
+| 5 | `chore: configure CI/CD pipeline workflow` |
+| 6 | `feat: initialize Next.js frontend and configure styling` |
+| 7 | `feat: integrate StellarWalletsKit and Freighter wallet APIs` |
+| 8 | `feat: implement stream deployment console and rate estimation` |
+| 9 | `feat: implement streaming progress dashboard and linear withdraws` |
+| 10 | `feat: implement activity feed logs and interactive UI components` |
+| 11 | `test: add frontend unit tests for vesting mechanics` |
+| 12 | `docs: complete README documentation` |
 
 Full commit history: [View on GitHub ↗](https://github.com/bean787/pay-stream/commits/main)
 

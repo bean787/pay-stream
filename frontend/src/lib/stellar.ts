@@ -337,7 +337,10 @@ export async function addTokenToWallet(): Promise<void> {
 }
 
 export async function mintTokens(recipient: string, amount: number): Promise<string> {
-  const adminSecret = process.env.NEXT_PUBLIC_DEPLOYER_SECRET || 'SACHTEYLV64OD2RPCVQ2VIKKGMFVJ7S5UY45TV23DZKXYPG5CCGYPOP4';
+  const adminSecret = process.env.NEXT_PUBLIC_DEPLOYER_SECRET;
+  if (!adminSecret) {
+    throw new Error('Faucet unavailable: NEXT_PUBLIC_DEPLOYER_SECRET is not configured for this build.');
+  }
   const adminKeypair = Keypair.fromSecret(adminSecret);
   const adminAddress = adminKeypair.publicKey();
 
