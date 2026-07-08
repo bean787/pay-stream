@@ -13,7 +13,7 @@
 
 🌐 **[Live Demo →](https://pay-stream.scorer-value-poppy.workers.dev/)**
 
-🎬 **Demo Video (1–2 min):** PENDING — to be recorded and linked before final submission
+
 
 </div>
 
