@@ -131,8 +131,8 @@ The centerpiece technical feature is the **on-chain inter-contract call** from t
 
 | Contract | Address | Stellar Expert |
 |---------|---------|---------------|
-| **Token Contract** (`SV`) | `CCEKQUG2J37NH6EM6VBFGN5KBAIPBSRTFU5Q7UVMMJXVBM7P3T23O67R` | [View on Stellar Expert ↗](https://stellar.expert/explorer/testnet/contract/CCEKQUG2J37NH6EM6VBFGN5KBA[...]
-| **Stream Contract** | `CCP65ERUSMNI25ZOO7P6C4HG4FVIJBMCPZPZW7AQGQA6653EOLETMJBG` | [View on Stellar Expert ↗](https://stellar.expert/explorer/testnet/contract/CCP65ERUSMNI25ZOO7P6C4HG4FVIJBMC[...]
+| **Token Contract** (`SV`) | `CCEKQUG2J37NH6EM6VBFGN5KBAIPBSRTFU5Q7UVMMJXVBM7P3T23O67R` | [View on Stellar Expert ↗](https://stellar.expert/explorer/testnet/contract/CCEKQUG2J37NH6EM6VBFGN5KBAIPBSRTFU5Q7UVMMJXVBM7P3T23O67R
+| **Stream Contract** | `CCP65ERUSMNI25ZOO7P6C4HG4FVIJBMCPZPZW7AQGQA6653EOLETMJBG` | [View on Stellar Expert ↗](https://stellar.expert/explorer/testnet/contract/CCP65ERUSMNI25ZOO7P6C4HG4FVIJBMCPZPZW7AQGQA6653EOLETMJBG
 
 ### Contract Addresses in Environment Config
 
