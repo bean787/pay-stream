@@ -267,16 +267,25 @@ Also caught at the contract level if the balance check fails post-submission.
 
 ---
 
-## 📸 Screenshots
+## 📸 Screenshots & Demo
 
-> **PENDING** — the following screenshots will be captured from the running app and added before final submission:
->
-> - Wallet connection modal (StellarWalletsKit) and connected state
-> - Create-stream flow and active streams dashboard
-> - Live vesting ticker and successful withdrawal
-> - Mobile responsive view (~375px width)
-> - CI/CD pipeline passing (GitHub Actions run)
-> - Test output with all passing tests
+### 🖥️ Desktop - System Lock Interface
+![Desktop System Locked View](screenshots/Snapzy_2026-07-08_19-40-19_071.png)
+
+### 📱 Mobile - Responsive System Lock View
+![Mobile System Locked View](screenshots/Snapzy_2026-07-08_19-41-53_742.png)
+
+### 📊 Mobile - Connected Active Streams Telemetry
+![Mobile Dashboard View](screenshots/Snapzy_2026-07-08_19-42-30_803.png)
+
+### 🧪 Smart Contract Unit Test Output (15 Passing Tests)
+![Rust Unit Tests on CI](screenshots/Snapzy_2026-07-08_19-43-27_694.png)
+
+### 🚀 CI/CD Pipeline Checks (All 7 Passing Checks)
+![CI/CD GitHub Actions Status](screenshots/Snapzy_2026-07-08_19-42-59_986.png)
+
+### 📹 Full Interactive Application Demo Walkthrough
+![Animated Application Demo](screenshots/Snapzy_Recording_2026-07-08_19-47-10.gif)
 
 ### Test Output (15 passing tests)
 
